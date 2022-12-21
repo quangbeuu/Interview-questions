@@ -7,6 +7,7 @@
 
 <a href="#JSX">1. JSX là gì</a>
 
-
-## Câu hỏi 1: JSX là gì 
+## Câu hỏi
+<b>1.JSX là gì</b>
+  
 
