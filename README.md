@@ -5,7 +5,7 @@
 
 ### Mục lục
 
-<div style="display: flex; align-items: center">
+<div style="display: flex; align-items: center; justify-content: center">
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" height="30" width="30" />
 <a href="#">ReactJs</a>
 </div>
