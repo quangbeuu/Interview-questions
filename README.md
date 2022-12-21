@@ -5,7 +5,7 @@
 
 ### Mục lục
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" height="30" width="30"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" height="30" width="30" display="inline-block"/>
 <a href="#">ReactJs</a>
 <br/>
 <a href="#">NodeJs</a>
