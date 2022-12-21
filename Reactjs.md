@@ -8,6 +8,10 @@
 <a href="#JSX">1. JSX là gì</a>
 
 ## Câu hỏi
-<b id="JSX">1. JSX là gì</b>
+<b id="JSX">1. JSX là gì?</b>
+<p>
+  - Viết tắt của Javascript XML
+  - ReactJS sử d
+</p>
   
 
