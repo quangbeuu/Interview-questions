@@ -8,6 +8,6 @@
 <a href="#JSX">1. JSX là gì</a>
 
 ## Câu hỏi
-<b>1.JSX là gì</b>
+<b id="JSX">1. JSX là gì</b>
   
 
