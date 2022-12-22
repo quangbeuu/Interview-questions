@@ -79,6 +79,6 @@
 
 <b id="cau3">3. Sự khác biệt giữa class component và function component?</b>
 
-<b id="cau4">4. Sự khác biệt giữa useState và ?</b>
+<b id="cau4">4. Sự khác biệt giữa useState và useRef?</b>
 
 
