@@ -11,6 +11,9 @@
   <li>
     <a href="#cau2">2. Sự khác biệt giữa toán tử "==" và "===" là như thế nào?</a>  
   </li>
+  <li>
+    <a href="#cau3">3. Phân biệt var, let và const?</a>  
+  </li>
 </ul>
 
 
@@ -107,3 +110,6 @@ var y = "2";
 ```
   <br/>
 </p>
+
+
+<b id="cau3">3. Phân biệt var, let và const?</b>
