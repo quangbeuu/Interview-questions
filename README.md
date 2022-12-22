@@ -22,6 +22,14 @@
       <a href="https://github.com/quangbeuu/Interview-questions/blob/main/NodeJS.md">NodeJs</a>
     </td>
   </tr>
+  <tr>
+    <td valign="top">
+      <img src="https://github.com/Ren0503/fullstack-interviews/raw/main/frontend/javascript/assets/js.png" height="30" width="30" />
+    </td>
+    <td valign="top">
+      <a href="https://github.com/quangbeuu/Interview-questions/blob/main/NodeJS.md">Javascript</a>
+    </td>
+  </tr>
 </table>
 
 <div>
