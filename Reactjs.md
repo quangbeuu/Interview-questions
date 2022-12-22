@@ -20,7 +20,7 @@
   </li>
   
    <li>
-    <a href="#cau5">5. Dùng useRef và querySelector khác gì nhau?</a>
+    <a href="#cau5">5. useEffect hoạt động như thế nào?</a>
   </li>
  </ul>
 
@@ -99,4 +99,4 @@
   - Còn khi update state với <b>useRef</b> components sẽ ko bị re-render và ta vẫn lấy đc giá trị state bằng cách .current
 </p>
 
-<b id="cau5">5. Dùng useRef và querySelector khác gì nhau ?</b>
+<b id="cau5">5. useEffect hoạt động như thế nào ?</b>
