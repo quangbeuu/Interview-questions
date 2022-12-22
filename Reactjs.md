@@ -11,6 +11,13 @@
   <li>
     <a href="#cau2">2. Virtual Dom (Dom ảo) là gì?</a>
   </li>
+  <li>
+    <a href="#cau3">3. Sự khác biệt giữa class component và function component?</a>
+  </li>
+  
+   <li>
+    <a href="#cau4">4. Sự khác biệt giữa useState và ?</a>
+  </li>
  </ul>
 
 
@@ -61,5 +68,17 @@
 </p>
 
 <img src="https://github.com/Ren0503/fullstack-interviews/raw/main/frontend/react/assets/virtual_DOM.png"/>
+
+<p>
+  - Đối với mỗi đối tượng DOM thật, có một đối tượng DOM ảo tương ứng (bản sao). Sự khác biệt chính giữa đối tượng DOM thực và đối tượng DOM ảo là bất kỳ thay đổi nào trong đối tượng DOM ảo sẽ không phản ánh trực tiếp trên màn hình.
+  <br/>
+  - React sử dụng hai virtual DOM để hiển thị giao diện người dùng. Một cái được sử dụng để lưu trữ trạng thái hiện tại của các đối tượng và cái còn lại để lưu trữ trạng thái trước đó của các đối tượng. React sẽ so sánh phiên bản DOM ảo hiện tại với phiên bản trước đó. Quá trình này được gọi là <b>"diffing"</b>.
+  <br/>
+  - Khi React biết các đối tượng DOM ảo nào đã thay đổi, sẽ tiến hành cập nhật duy nhất đối tượng đó vào DOM thật
+</p>
+
+<b id="cau3">3. Sự khác biệt giữa class component và function component?</b>
+
+<b id="cau4">4. Sự khác biệt giữa useState và ?</b>
 
 
