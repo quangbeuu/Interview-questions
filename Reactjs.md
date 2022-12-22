@@ -25,12 +25,19 @@
 <p>
   * Để trình duyệt web có thể đọc được tệp JSX, tệp cần được chuyển đổi thành một đối tượng JavaScript thông thường. Để làm điều này, chúng tôi sử dụng Babel.
 </p>
-<img src="https://firebasestorage.googleapis.com/v0/b/mindcard-99b06.appspot.com/o/interview%2FScreenshot%202022-12-22%20at%2010.22.09.png?alt=media&token=7c18c74c-9f02-48b9-beaa-23baf029ee4c" width="820">
+<img src="https://firebasestorage.googleapis.com/v0/b/mindcard-99b06.appspot.com/o/interview%2FScreenshot%202022-12-22%20at%2010.22.09.png?alt=media&token=7c18c74c-9f02-48b9-beaa-23baf029ee4c" width="820" align="center">
 
 <b id="cau2">2. Virtual Dom (Dom ảo) là gì?</b>
 <p>
   * DOM là gì? 
   <br/>
-      - DOM là viết tắt của Document Object Model. 
-      - DOM đại diện cho một tài liệu HTML có cấu trúc cây logic
+      - DOM là viết tắt của <b>Document Object Model</b>. 
+      <br/>
+      - DOM đại diện cho một tài liệu HTML có cấu trúc cây logic. 
+      <br/>
+      - DOM có cấu trúc được định nghĩa thành các <b>đối tượng, phương thức, thuộc tính</b> để có thể truy xuất dễ dàng. Chúng được coi như các node và được biểu diễn dưới dạng <b>DOM Tree</b>.
+      <br/>
 </p>
+  
+<img src="https://images.viblo.asia/74e0e748-dff2-4790-a202-f80b29519951.gif" align="center"/>
+
