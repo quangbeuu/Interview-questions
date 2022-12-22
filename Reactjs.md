@@ -99,4 +99,4 @@
   - Còn khi update state với <b>useRef</b> components sẽ ko bị re-render và ta vẫn lấy đc giá trị state bằng cách .current
 </p>
 
-<b id="cau5">5. useEffect hoạt động như thế nào ?</b>
+<b id="cau5">5. useEffect hoạt động như thế nào và nó dùng để làm gì?</b>
