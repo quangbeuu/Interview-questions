@@ -5,13 +5,17 @@
 
 ## Mục lục
 
-<a href="#JSX">1. JSX là gì</a>
+<a href="#cau1">1. JSX là gì</a>
 
 ## Câu hỏi
-<b id="JSX">1. JSX là gì?</b>
+<b id="cau1">1. JSX là gì?</b>
 <p>
   - Viết tắt của Javascript XML
-  - ReactJS sử d
+   <br/>
+  - ReactJS sử dụng JSX làm pattern (khuôn mẫu) thay vì JS thông thường
+   <br/>
+  - Dễ hiểu hơn, JSX đc sử dụng vơi React để mô tả giao diện người dùng trông như thế nào
+  - Với JSX, ta có thể viết các mã HTML trong cùng một tệp chứa code Javascript
 </p>
-  
 
+<img src="https://firebasestorage.googleapis.com/v0/b/mindcard-99b06.appspot.com/o/interview%2FScreenshot%202022-12-22%20at%2010.22.09.png?alt=media&token=7c18c74c-9f02-48b9-beaa-23baf029ee4c" width="820">
