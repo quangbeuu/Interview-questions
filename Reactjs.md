@@ -39,5 +39,5 @@
       <br/>
 </p>
   
-<img src="https://images.viblo.asia/74e0e748-dff2-4790-a202-f80b29519951.gif" align="center"/>
+<img src="https://images.viblo.asia/74e0e748-dff2-4790-a202-f80b29519951.gif" align=center/>
 
