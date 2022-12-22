@@ -16,7 +16,11 @@
   </li>
   
    <li>
-    <a href="#cau4">4. Sự khác biệt giữa useState và ?</a>
+    <a href="#cau4">4. Sự khác biệt giữa useState và useRef ?</a>
+  </li>
+  
+   <li>
+    <a href="#cau5">5. Dùng useRef và querySelector khác gì  ?</a>
   </li>
  </ul>
 
