@@ -8,6 +8,9 @@
   <li>
     <a href="#cau1">1. Các kiểu dữ liệu trong Javascript?</a>  
   </li>
+  <li>
+    <a href="#cau2">2. Sự khác biệt giữa toán tử "==" và "===" là như thế nào?</a>  
+  </li>
 </ul>
 
 
@@ -85,3 +88,22 @@ var obj1 = {
       
 var array1 = [5, "Hello", true, 4.1];  
 ```
+
+<b id="cau2">2. Sự khác biệt giữa toán tử "==" và "===" là như thế nào?</b>
+
+<p>
+   * == (abstract equality): dùng để kiểm tra xem 2 phần tử được kiểm tra đó có bằng nhau không, nhưng nó chỉ xét về giá trị mà không quan tâm đến kiểu dữ liệu của 2 phần tử đó 
+  <br/>
+   * === (strict equality): ngoài so sánh giá trị n còn quan tâm đến cả kiểu dữ liệu của các phần tử được so sánh 
+   <br/>
+ Ví dụ:
+
+```js
+var x = 2;
+var y = "2";
+(x == y)  // Trả về true vì cả hai cùng giá trị
+
+(x === y) // Trả về false vì typeof x là "number" còn typeof y là "string
+```
+  <br/>
+</p>
