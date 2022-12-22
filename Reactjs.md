@@ -80,5 +80,19 @@
 <b id="cau3">3. Sự khác biệt giữa class component và function component?</b>
 
 <b id="cau4">4. Sự khác biệt giữa useState và useRef?</b>
+<p>
+  - <b>useState</b>: là 1 hook dùng để update state trong functional component
+  <br/>
+  - <b>useRef</b>  : là 1 hook cung cấp cách để truy cập vào DOM. Nó sẽ trả về một đối tượng ref để bạn có thể lấy value bằng cách .current
+</p>
+<p>
+  * Sự khác biệt:
+  <br/>
+  - Khi update state với useState thì components sẽ bị re-render. 
+  <br> 
+  VD: Khi tôi thay đổi state 'A' thành 'B' khi đó components sẽ re-render và cập nhật ngay lập tức 
+  <br/>
+  - Còn khi update state với useRef components sẽ ko bị re-render và ta vẫn lấy đc giá trị state bằng cách .current
+</p>
 
 
