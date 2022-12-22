@@ -49,14 +49,17 @@
   <img src="https://images.viblo.asia/74e0e748-dff2-4790-a202-f80b29519951.gif" />
 </div>
 <p>
-  <b>*Vấn đề với DOM thật?</b> 
+  <b>* Vấn đề với DOM thật?</b> 
   <br/>
   - Mỗi thay đổi đến DOM sẽ có khả năng khiến browser phải thay đổi layout, tính toán style, re-render.
   <br/>
-  - Tuỳ thuộc vào sự thay đổi mà phạm vi ảnh hưởng và yêu cầu tính toán khác nhau, tuy nhiên dù ít hay nhiều vẫn sẽ yêu cầu browser phải thay đổi lại một phần hoặc nhiều phần trên màn hình.
-  <br/>
   - Chúng ta có thể hình dung rằng một hành động của người dùng làm UI thay đổi ở 20 điểm khác nhau trên màn hình, chúng ta gọi DOM API 20 lần dẫn đến phải browser phải chạy tính toán lại 20 lần (!!!)
-
 </p>
+
+<p>
+  <b>* Virtual DOM là gì?</b>
+</p>
+
+<img src="https://github.com/Ren0503/fullstack-interviews/raw/main/frontend/react/assets/virtual_DOM.png"/>
 
 
