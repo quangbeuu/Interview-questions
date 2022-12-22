@@ -27,7 +27,7 @@
       <img src="https://thienanblog.com/wp-content/uploads/2015/04/javascript_logo.png" height="30" width="30" />
     </td>
     <td valign="top">
-      <a href="https://github.com/quangbeuu/Interview-questions/blob/main/NodeJS.md">Javascript</a>
+      <a href="https://github.com/quangbeuu/Interview-questions/blob/main/Javascript.md">Javascript</a>
     </td>
   </tr>
 </table>
