@@ -88,11 +88,11 @@
 <p>
   * Sự khác biệt:
   <br/>
-  - Khi update state với useState thì components sẽ bị re-render. 
+  - Khi update state với <b>useState</b> thì components sẽ bị re-render. 
   <br> 
   VD: Khi tôi thay đổi state 'A' thành 'B' khi đó components sẽ re-render và cập nhật ngay lập tức 
   <br/>
-  - Còn khi update state với useRef components sẽ ko bị re-render và ta vẫn lấy đc giá trị state bằng cách .current
+  - Còn khi update state với <b>useRef</b> components sẽ ko bị re-render và ta vẫn lấy đc giá trị state bằng cách .current
 </p>
 
 
