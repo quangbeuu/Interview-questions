@@ -133,3 +133,17 @@ var y = "2";
 </p>
 
 <img src="https://miro.medium.com/max/1400/1*KxHwVbB0zhnSVrhrWtT-gg.webp"/>
+
+***a. var***
+<br/>
+<b>* Scope:</b> 
+<br/>
+<p>
+- Có phạm vi  <b><i>global scope</i></b> và  <b><i>function scope</i></b>:
+    <br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ Global scope: Khi var dc khai báo bên ngoài 1 hàm
+    <br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ Function scope: Khi var dc khai báo bên trong 1 hàm (có nghĩa là biến chỉ truy cập đc trong funciton)
+</p>
+ 
+
