@@ -121,13 +121,13 @@ var y = "2";
     - Có 3 loại Scope: 
     <ul>
       <li>
-        <b><i>Global scope: phạm vi toàn cầu</i></b>
+        <b><i>Global scope</i></b>: phạm vi toàn cầu
       </li>
       <li>
-        <b><i>Function scope: phạm vi hàm</i></b>
+        <b><i>Function scope</i></b>: phạm vi hàm
       </li>
       <li>
-        <b><i>Block scope: phạm vi khối</i></b>
+        <b><i>Block scope</i></b>: phạm vi khối
       </li>
     </ul>   
 </p>
