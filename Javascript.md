@@ -113,3 +113,17 @@ var y = "2";
 
 
 <b id="cau3">3. Phân biệt var, let và const?</b>
+<p>
+  <b>* Scope:</b> 
+  <br/>
+    - Xác định phạm vi bạn có thể truy cập các biến và hàm trong ứng dụng của bạn
+  <br/>
+    - Có 3 loại Scope: 
+    <ul>
+      <li>Global scope: phạm vi toàn cầu</li>
+      <li>Function scope: phạm vi hàm</li>
+      <li>Block scope: phạm vi khối</li>
+    </ul>   
+</p>
+
+<img src="https://miro.medium.com/max/1400/1*KxHwVbB0zhnSVrhrWtT-gg.webp"/>
