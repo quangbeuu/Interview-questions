@@ -14,6 +14,10 @@
   <li>
     <a href="#cau3">3. Phân biệt var, let và const?</a>  
   </li>
+  
+   <li>
+    <a href="#cau4">4. Lập trình hướng đối tượng (OOP) trong Javascript?</a>  
+  </li>
 </ul>
 
 
@@ -275,3 +279,7 @@ const greeting = "say Hello instead";//error : Identifier 'greeting' has already
 <p>
   - Cũng giống như <b>let</b>, khai báo <b>const</b> được nâng lên đầu nhưng không được khởi tạo.
 </p>
+
+<b id="cau4">4. Lập trình hướng đối tượng (OOP) trong Javascript?</b>
+
+<img src="https://i.ytimg.com/vi/e--K9kCz-v0/maxresdefault.jpg"/>
