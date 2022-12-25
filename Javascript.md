@@ -369,3 +369,14 @@ cat.eat();
   <br/>
   => Khi tạo một Animal ta truyền dữ liệu, và gọi eat là xong, không cần quan tâm eat được cài đặt như thế nào.
 </p>
+
+**c. Tính đa hình** 
+
+<p>
+  - <b>Tính đa hình</b> được thể hiện khi gọi một phương thức nhưng cách hoạt động là khác nhau.
+  <br/>
+  
+  - <b>Ví dụ</b>: Bạn thấy cùng một phương thức <b>run</b> nhưng <b>Dog, Cat</b> thực hiện khác nhau. 
+  <br/>
+  - <b>Dog</b> in ra console.log(‘Dog runs’) và <b>Cat</b> in ra console.log(‘Cat runs’);
+</p>
