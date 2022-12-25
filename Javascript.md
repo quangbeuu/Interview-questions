@@ -457,3 +457,27 @@ writeBlog('JS', function() {
 
 
 <b id="cau7">7. Sự khác biệt giữa undefined và null là gì?</b>
+
+**Null**
+
+<p>
+  - Có nghĩa là một giá trị rỗng hoặc không tồn tại 
+  <br/>
+  - <b>null</b> được gán cho một biến như là một đại diện không có giá trị 
+  <br/>
+  - <b>typeof</b> của null là <b>object</b>
+</p>
+
+```js
+var test1 = null;
+console.log(typeof test1);
+// object
+```
+
+**Undefined**
+
+<p>
+  - Có nghĩa là một biến đã được khai báo nhưng giá trị của biến đó chưa được xác định
+  <br/>
+  - <b>typeof</b> của undefined là <b>undefined</b>
+</p>
