@@ -133,8 +133,14 @@ var y = "2";
 </p>
 
 <img src="https://miro.medium.com/max/1400/1*KxHwVbB0zhnSVrhrWtT-gg.webp"/>
+<b>* Hoisting là gì?:</b> 
 
-***a. var***
+<p>
+ - <b>Hoisting</b> là một cơ chế JavaScript trong đó các khai báo biến và hàm được di chuyển lên đầu phạm vi của chúng trước khi thực thi mã
+</p>
+<img src="https://www.tutorialsteacher.com/Content/images/js/hoisting.png"/>
+
+***A. var***
 <br/>
 <b>* Scope:</b> 
 <br/>
@@ -145,11 +151,56 @@ var y = "2";
     <br/>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ Function scope: Khi var dc khai báo bên trong 1 hàm (có nghĩa là biến chỉ truy cập đc trong funciton)
 </p>
-```
+
+```js
 var greeter = "hey hi";
 
 function newFunction() {
-var hello = "hello";
+   var hello = "hello";
 }
 ```
+<b>* Ví dụ:</b> 
+<p>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; + greeter có phạm vi <b><i>global scope</i></b> vì nó tồn tại bên ngoài một <b>function</b>
+  <br/>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; + hello có phạm vi <b><i>function scope</i></b> => Do đó, ta ko thể truy cập biến hello ở bên ngoài hàm
+</p>
 
+```js
+var greeter = "hey hi";
+
+function newFunction() {
+   var hello = "hello";
+}
+console.log(hello); // error: hello is not defined
+```
+<b>* Có thể khai báo lại và update:</b> 
+
+
+```js
+
+var greeter = "hey hi";
+var greeter = "say Hello instead";
+
+// Hoặc 
+
+var greeter = "hey hi";
+greeter = "say Hello instead";
+
+```
+
+<b>* Hoisting of var:</b> 
+
+<p>
+  - <b>var</b> các biến được nâng lên đầu phạm vi của nó và được khởi tạo với giá trị <b>undefined</b>.
+</p>
+
+```js
+
+var greeter;
+console.log(greeter); //greeter is undefined
+greeter = "say hello"
+
+```
+
+***B. let***
