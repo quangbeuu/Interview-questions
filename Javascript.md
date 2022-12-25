@@ -22,6 +22,10 @@
   <li>
     <a href="#cau5">5. Callback function là gì? </a>  
   </li>
+  
+  <li>
+    <a href="#cau6">6. Hãy cho biết Falsy value và Truthy value là gì? Có những falsy value nào trong JavaScript? </a>  
+  </li>
 </ul>
 
 
@@ -396,4 +400,52 @@ cat.eat();
   <img src="https://allma.si/blog/wp-content/uploads/2020/10/callback-in-javascript.png" height="500"/>
 </div>
 
+<p>
+  - <b>Callback function (hàm gọi lại)</b> là một hàm được thực thi sau khi một hàm khác đã thực thi sau.
+  <br/>
+  - Một <b>callback function</b> là một hàm được truyền cho một hàm khác như một đối số và được thực thi sau khi một số tác vụ đã hoàn thành. 
+</p>
 
+<b>- Ví dụ:</b>
+
+```js
+
+function writeBlog(topic, callback) {
+  alert(`Starting my ${topic} blog.`);
+// then execute the callback function that was passed
+  callback();
+}
+
+writeBlog('JS', function() {
+  alert('Finished my blog!');
+});
+
+```
+
+<p>
+  - Nếu bạn chạy đoạn code, bạn sẽ nhận được hai thông báo. Thông báo đầu tiên <b>“Starting my JS blog.”</b> và thông báo thứ hai: <b>“Finished my blog!”</b>
+</p>
+
+<b id="cau6">6. Hãy cho biết Falsy value và Truthy value là gì? Có những falsy value nào trong JavaScript?</b>
+
+<p>
+  - <b>Falsy values</b> là những giá trị trong Javascripts mà khi ép kiểu về Boolean, thì sẽ cho ra giá trị <b><i>False</i></b>.
+  <br/>
+  - <b>Truthy values</b> là những giá trị mà khi ép kiểu về Boolean, thì sẽ cho ra giá trị <b><i>True</i></b>
+</p>
+
+<b>* 7 giá trị falsy values: </b>
+
+<ul>
+  <li>number 0</li>
+  <li>BigInt 0n</li>
+  <li>undefined</li>
+  <li>null</li>
+  <li>NaN</li>
+  <li>false</li>
+  <li>""</li>
+</ul>
+
+<p>
+  => Tất cả những kiểu dữ liệu trên sẽ thành false trong các điều kiện.
+</p>
