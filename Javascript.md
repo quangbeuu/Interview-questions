@@ -244,6 +244,11 @@ console.log(greeting);//"say Hi"
 
 <p>
 - Giống như <b>var</b>, các khai báo <b>let</b> được đưa lên trên cùng
-- Không giống như từ khóa <b>var</b> khởi tạo là <b>undefined</b>, từ khóa <b>let</b? không được khởi tạo. 
+<br/>
+  - Không giống như từ khóa <b>var</b> khởi tạo là <b>undefined</b>, từ khóa <b>let</b> không được khởi tạo. 
+<br/>
 - Nếu bạn cố gắng sử dụng <b>let</b> trước khi khai báo, bạn sẽ nhận được lỗi <b>Reference Error</b>.
 </p>
+
+
+***B. const***
