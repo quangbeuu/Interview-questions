@@ -27,9 +27,12 @@
     <a href="#cau6">6. Hãy cho biết Falsy value và Truthy value là gì? Có những falsy value nào trong JavaScript? </a>  
   </li>
   
-  
   <li>
     <a href="#cau7">7. Sự khác biệt giữa undefined và null là gì? </a>  
+  </li>
+  
+  <li>
+    <a href="#cau8">8. DOM là gì? </a>  
   </li>
 </ul>
 
@@ -482,7 +485,6 @@ console.log(typeof test1);
   - <b>typeof</b> của undefined là <b>undefined</b>
 </p>
 
-
 ```js
 var test2;
 console.log(test2);
@@ -490,3 +492,9 @@ console.log(test2);
 console.log(typeof test2);
 // undefined
 ```
+
+<b id="cau8">8. DOM là gì?</b>
+
+<p>
+  - DOM là viết tắt của Document Object Modal
+</p>
