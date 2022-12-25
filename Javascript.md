@@ -251,4 +251,27 @@ console.log(greeting);//"say Hi"
 </p>
 
 
-***B. const***
+***C. const***
+
+<b>* Có phạm vi <b><i>block scope</i></b>:</b> 
+
+<b>* Không thể update cũng như khai báo lại</b> 
+
+
+```js
+
+const greeting = "say Hi";
+greeting = "say Hello instead";//error : Assignment to constant variable. 
+
+// Cũng không phải cái này: 
+
+const greeting = "say Hi";
+const greeting = "say Hello instead";//error : Identifier 'greeting' has already been declared
+
+```
+
+<b>* Hoisting of const:</b> 
+
+<p>
+  - Cũng giống như <b>let</b>, khai báo <b>const</b> được nâng lên đầu nhưng không được khởi tạo.
+</p>
