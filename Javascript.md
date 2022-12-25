@@ -392,3 +392,5 @@ cat.eat();
 
 
 <b id="cau5">5. Callback function là gì?</b>
+
+<img src="https://allma.si/blog/wp-content/uploads/2020/10/callback-in-javascript.png"/>
