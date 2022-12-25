@@ -374,9 +374,14 @@ cat.eat();
 
 <p>
   - <b>Tính đa hình</b> được thể hiện khi gọi một phương thức nhưng cách hoạt động là khác nhau.
-  <br/>
-  
+  <br/>                                                  
   - <b>Ví dụ</b>: Bạn thấy cùng một phương thức <b>run</b> nhưng <b>Dog, Cat</b> thực hiện khác nhau. 
   <br/>
   - <b>Dog</b> in ra console.log(‘Dog runs’) và <b>Cat</b> in ra console.log(‘Cat runs’);
+</p>
+
+**d. Tính thừa kế**
+
+<p>
+  - <b>Tính thừa kề</b> thể hiện khi <b>Dog, Cat</b> thừa kế từ <b>Animal</b>. Do đó chúng đều có các thuộc tính, phương thức của <b>Animal</b>.
 </p>
