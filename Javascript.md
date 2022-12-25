@@ -283,3 +283,89 @@ const greeting = "say Hello instead";//error : Identifier 'greeting' has already
 <b id="cau4">4. Lập trình hướng đối tượng (OOP) trong Javascript?</b>
 
 <img src="https://i.ytimg.com/vi/e--K9kCz-v0/maxresdefault.jpg"/>
+
+
+<p>
+  - <b>Javascript</b> vừa là ngôn ngữ <b>OOP (hướng đối tượng)</b> vừa là ngôn ngữ <b>hướng chức năng (Functional language)</b>
+</p>
+<b>* 4 tính chất của OOP:</b>
+<ul>
+  <li>
+    Tính đóng gói <b>(encapsulation)</b>
+  </li>
+  <li>
+    Tính trừu tượng <b>(abstraction)</b>
+  </li>
+  <li>
+    Tính đa hình <b>(polymorphism)</b>
+  </li>
+  <li>
+    Tính thừa kế <b>(inheritance)</b>
+  </li>
+</ul>
+
+<b>* Hiểu hơn về tính chất của OOP thông qua ví dụ sau:</b>
+
+
+```js
+class Animal {
+ constructor(name) {
+  this.name = name;
+ }
+
+ eat() {
+  console.log('Animal eats some food');
+ }
+ 
+ run() {
+  console.log('Animal runs');
+ } 
+}
+
+class Dog extends Animal {
+ constructor(name, color) {
+  super(name);
+  this.color = color;
+ }
+
+ run() {
+  console.log('Dog runs');
+ }
+}
+
+class Cat extends Animal {
+ constructor(name, color) {
+  super(name);
+  this.color = color;
+ }
+
+ run() {
+  console.log('Cat runs');
+ }
+}
+
+const dog = new Dog('Kiki','black');
+const cat = new Cat('Meo', 'white');
+
+dog.eat();
+cat.eat();
+```
+
+**a. Tính đóng gói** 
+
+<p>
+  - <b>Tính đóng gói</b> cho thấy rằng các <b>thuộc tính (property)</b>: <b>name</b> của <b>Animal</b>, <b>color</b> của <b>Dog, Cat</b> đều được che giấu. Chúng ta không thể sửa trực tiếp đc.
+  <br/>
+  - Nó được gọi là các <b>thuộc tính nội tại</b> của đối tượng, nó chỉ đc cập nhật khi ta cung cấp <b>method (phương thức)</b> để thao tác trên nó
+</p>
+
+**b. Tính trừu tượng** 
+
+<p>
+  - <b>Tính trừu tượng</b> được thể hiện khi chúng ta tạo mới một <b>instance (thể hiện)</b> của đối tượng (vd: const dog = new Dog('Kiki','black')), 
+  chúng ta ko cần quan tâm sâu bên trong nó làm cái gì
+  <br/>
+  - VD: đối tượng <b>Animal</b> ta chỉ cần quan tâm nó có thuộc tính <b>name</b> và phương thức <b>eat</b>
+  <br/>
+  => Khi tạo một Animal ta truyền dữ liệu, và gọi eat là xong, không cần quan tâm eat được cài đặt như thế nào.
+</p>
