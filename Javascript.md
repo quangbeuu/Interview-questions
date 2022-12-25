@@ -203,13 +203,47 @@ greeter = "say hello"
 
 ***B. let***
 
-<br/>
-<b>* Scope:</b> 
-<br/>
+<b>* Có phạm vi <b><i>block scope</i></b>:</b> 
+
+```js
+
+let greeting = "say Hi";
+let times = 4;
+
+if (times > 3) {
+   let hello = "say Hello instead";
+   console.log(hello);//"say Hello instead"
+}
+console.log(hello) // hello is not defined
+
+```
+<b>* Có thể update nhưng không thể khai báo lại:</b> 
+
+
+```js
+
+let greeting = "say Hi";
+let greeting = "say Hello instead";//error: Identifier 'greeting' has already been declared
+
+```
+<p>Tuy nhiên, nếu cùng một biến được xác định trong các phạm vi khác nhau, sẽ không có lỗi.</p>
+
+
+```js
+
+let greeting = "say Hi";
+if (true) {
+   let greeting = "say Hello instead";
+      console.log(greeting);//"say Hello instead"
+    }
+console.log(greeting);//"say Hi"
+
+```
+
+<b>* Hoisting of let:</b> 
+
 <p>
-- Có phạm vi  <b><i>block scope</i></b>:
-    <br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ Global scope: Khi var dc khai báo bên ngoài 1 hàm
-    <br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ Function scope: Khi var dc khai báo bên trong 1 hàm (có nghĩa là biến chỉ truy cập đc trong funciton)
+- Giống như <b>var</b>, các khai báo <b>let</b> được đưa lên trên cùng
+- Không giống như từ khóa <b>var</b> khởi tạo là <b>undefined</b>, từ khóa <b>let</b? không được khởi tạo. 
+- Nếu bạn cố gắng sử dụng <b>let</b> trước khi khai báo, bạn sẽ nhận được lỗi <b>Reference Error</b>.
 </p>
