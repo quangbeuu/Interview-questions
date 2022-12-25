@@ -145,5 +145,11 @@ var y = "2";
     <br/>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ Function scope: Khi var dc khai báo bên trong 1 hàm (có nghĩa là biến chỉ truy cập đc trong funciton)
 </p>
- 
+```
+var greeter = "hey hi";
+
+function newFunction() {
+var hello = "hello";
+}
+```
 
