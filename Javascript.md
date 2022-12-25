@@ -127,7 +127,7 @@ var y = "2";
         <b><i>Function scope</i></b>: phạm vi hàm
       </li>
       <li>
-        <b><i>Block scope</i></b>: phạm vi khối
+        <b><i>Block scope</i></b>: phạm vi khối (là một đoạn mã được giới hạn bởi {})
       </li>
     </ul>   
 </p>
@@ -142,11 +142,9 @@ var y = "2";
 
 ***A. var***
 <br/>
-<b>* Scope:</b> 
+<b>* Có phạm vi  <b><i>global scope</i></b> và  <b><i>function scope</i></b>:</b> 
 <br/>
 <p>
-- Có phạm vi  <b><i>global scope</i></b> và  <b><i>function scope</i></b>:
-    <br/>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ Global scope: Khi var dc khai báo bên ngoài 1 hàm
     <br/>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ Function scope: Khi var dc khai báo bên trong 1 hàm (có nghĩa là biến chỉ truy cập đc trong funciton)
@@ -204,3 +202,14 @@ greeter = "say hello"
 ```
 
 ***B. let***
+
+<br/>
+<b>* Scope:</b> 
+<br/>
+<p>
+- Có phạm vi  <b><i>block scope</i></b>:
+    <br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ Global scope: Khi var dc khai báo bên ngoài 1 hàm
+    <br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ Function scope: Khi var dc khai báo bên trong 1 hàm (có nghĩa là biến chỉ truy cập đc trong funciton)
+</p>
