@@ -26,6 +26,11 @@
   <li>
     <a href="#cau6">6. Hãy cho biết Falsy value và Truthy value là gì? Có những falsy value nào trong JavaScript? </a>  
   </li>
+  
+  
+  <li>
+    <a href="#cau7">7. Sự khác biệt giữa undefined và null là gì? </a>  
+  </li>
 </ul>
 
 
@@ -449,3 +454,6 @@ writeBlog('JS', function() {
 <p>
   => Tất cả những kiểu dữ liệu trên sẽ thành false trong các điều kiện.
 </p>
+
+
+<b id="cau7">7. Sự khác biệt giữa undefined và null là gì?</b>
