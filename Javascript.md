@@ -365,7 +365,7 @@ cat.eat();
   - <b>Tính trừu tượng</b> được thể hiện khi chúng ta tạo mới một <b>instance (thể hiện)</b> của đối tượng (vd: const dog = new Dog('Kiki','black')), 
   chúng ta ko cần quan tâm sâu bên trong nó làm cái gì
   <br/>
-  - VD: đối tượng <b>Animal</b> ta chỉ cần quan tâm nó có thuộc tính <b>name</b> và phương thức <b>eat</b>
+  - <b>VD</b>: đối tượng <b>Animal</b> ta chỉ cần quan tâm nó có thuộc tính <b>name</b> và phương thức <b>eat</b>
   <br/>
   => Khi tạo một Animal ta truyền dữ liệu, và gọi eat là xong, không cần quan tâm eat được cài đặt như thế nào.
 </p>
