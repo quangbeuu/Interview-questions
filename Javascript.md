@@ -18,6 +18,10 @@
    <li>
     <a href="#cau4">4. Lập trình hướng đối tượng (OOP) trong Javascript?</a>  
   </li>
+  
+  <li>
+    <a href="#cau5">5. Callback function là gì? </a>  
+  </li>
 </ul>
 
 
@@ -385,3 +389,6 @@ cat.eat();
 <p>
   - <b>Tính thừa kề</b> thể hiện khi <b>Dog, Cat</b> thừa kế từ <b>Animal</b>. Do đó chúng đều có các thuộc tính, phương thức của <b>Animal</b>.
 </p>
+
+
+<b id="cau5">5. Callback function là gì?</b>
