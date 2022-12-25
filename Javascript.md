@@ -501,6 +501,7 @@ console.log(typeof test2);
   - DOM đại diện cho một tài liệu HTML có cấu trúc cây logic 
   <br/> 
   - DOM có cấu trúc được định nghĩa thành các <b>đối tượng, phương thức, thuộc tính</b> để có thể truy xuất dễ dàng. Chúng được coi như các node và được biểu diễn dưới dạng <b>DOM Tree</b>.
+  <br/>
   - Ví dụ về cách code HTML được chuyển đổi thành DOM:
 </p>
 <img src="https://github.com/Ren0503/fullstack-interviews/raw/main/frontend/javascript/assets/dom.png"/>
