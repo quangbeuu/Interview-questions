@@ -481,3 +481,12 @@ console.log(typeof test1);
   <br/>
   - <b>typeof</b> của undefined là <b>undefined</b>
 </p>
+
+
+```js
+var test2;
+console.log(test2);
+// undefined
+console.log(typeof test2);
+// undefined
+```
