@@ -535,3 +535,55 @@ i++ // Will evaluate to 0
 ```
 
 <b id="cau10">10. Web storage là gì?</b>
+<p>
+  - Web storage là một API cung cấp cách để trình duyệt lưu trữ các kặp key-value cho trình duyệt của người dùng cục bộ (local) 
+  <br/>
+  - Web storage cung cấp 2 cách để lưu trữ dữ liệu: 
+  
+  <ul>
+    <li>
+      <b>Local storage</b> - lưu trữ dữ liệu cho client mà không có ngày hết hạn.
+    </li>
+    <li>
+      <b>Session storage</b> - chỉ lưu trữ dữ liệu cho một phiên. Dữ liệu sẽ biến mất khi trình duyệt bị đóng. 
+    </li>
+  </ul>
+</p>
+
+<p>
+  - Dưới đây là một ví dụ về cách bạn có thể lưu, truy cập và xóa một mục khỏi sessionStorage
+</p>
+
+```js
+// Save data to sessionStorage
+sessionStorage.setItem('favoriteColor', 'gray');
+
+// Get the color from the sessionStorage
+let data = sessionStorage.getItem('favoriteColor');
+console.log(data);
+
+// Remove saved color preset from sessionStorage
+sessionStorage.removeItem('favoriteColor');
+
+// Remove ALL the saved data from sessionStorage
+sessionStorage.clear();
+```
+<p>
+  - Và đây là cách bạn có thể làm điều tương tự bằng cách sử dụng localStorage:
+</p>
+
+
+```js
+// Save data to localStorage
+localStorage.setItem('favoriteColor', 'gray');
+
+// Get the color from the localStorage
+let data = localStorage.getItem('favoriteColor');
+console.log(data);
+
+// Remove saved color preset from localStorage
+localStorage.removeItem('favoriteColor');
+
+// Remove ALL the saved data from localStorage
+localStorage.clear();
+```
