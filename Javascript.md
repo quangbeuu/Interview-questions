@@ -512,3 +512,20 @@ console.log(typeof test2);
 
 
 <b id="cau9">9. Sự khác biệt giữa i++ và ++i là gì?</b>
+
+<p>
+  - Cả <b>i++</b> và <b>++i</b> đều sẽ tăng giá trị lên 1 
+  <br/>
+  - Tuy nhiên: 
+  <ul>
+    <li><b>i++</b> được gọi là bước tăng hậu tố (postfix increment) sẽ trả về giá trị trước khi nó được tăng lên</li>
+    <li><b>++i</b> được gọi là bước tăng tiền tố (prefix increment) sẽ trả về giá trị sau khi nó được tăng</li>
+  </ul>
+</p>
+
+```js
+let i = 0;
+
+i++ // Will evaluate to 0
+++i // Will evaluate to 1
+```
