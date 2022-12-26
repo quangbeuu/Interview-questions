@@ -34,6 +34,10 @@
   <li>
     <a href="#cau8">8. DOM là gì? </a>  
   </li>
+  
+  <li>
+    <a href="#cau9">9. Sự khác biệt giữa i++ và ++i là gì?</a>  
+  </li>
 </ul>
 
 
@@ -505,3 +509,6 @@ console.log(typeof test2);
   - Ví dụ về cách code HTML được chuyển đổi thành DOM:
 </p>
 <img src="https://github.com/Ren0503/fullstack-interviews/raw/main/frontend/javascript/assets/dom.png"/>
+
+
+<b id="cau9">9. Sự khác biệt giữa i++ và ++i là gì?</b>
