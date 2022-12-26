@@ -38,6 +38,10 @@
   <li>
     <a href="#cau9">9. Sự khác biệt giữa i++ và ++i là gì?</a>  
   </li>
+  
+  <li>
+    <a href="#cau10">10. Web storage là gì??</a>  
+  </li>
 </ul>
 
 
@@ -529,3 +533,5 @@ let i = 0;
 i++ // Will evaluate to 0
 ++i // Will evaluate to 1
 ```
+
+<b id="cau10">10. Web storage là gì?</b>
