@@ -638,3 +638,29 @@ fnc()                     //Hi
   - <b><i>implicit</i></b> (không tường minh - ngầm định)
 </p>
 
+<p>
+  - Đây là một ví dụ về <i>explicit coercion</i>
+</p>
+
+```js
+
+var a = "42";
+var b = Number(a);
+a; // "42"
+b; // 42 -- the number!
+
+```
+
+<p>
+  - Đây là một ví dụ về <i>implicit coercion</i>
+</p>
+
+
+```js
+
+var a = "42";
+var b = a \* 1; // "42" implicitly coerced to 42 here
+a; // "42"
+b; // 42 -- the number!
+
+```
