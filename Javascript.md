@@ -611,7 +611,8 @@ function sayHello(){      //parent function
   }
 }
 
-sayHello() // Hi
+const fnc = sayHello();
+fnc()                     //Hi
 
 ```
 
