@@ -85,7 +85,7 @@
 
 <b id="cau3">3. Sự khác biệt giữa class component và function component?</b>
 
-**a.Khai báo**
+**a. Khai báo**
 
 <p>
   <b>Function component</b> giống như 1 hàm thông thường trong JS, ta có thể tạo kiểu 
@@ -132,6 +132,57 @@ class Card extends React.Component{
 
 ```
 
+**b. Xử lý props**
+
+<p>
+  Ta thử render component dưới đây theo hai cách:
+</p>
+
+```js
+
+<Student Info name="Vivek" rollNumber="23" />
+
+```
+
+<p>
+  - <b>Function component</b>: bất kỳ <b><i>props</i></b> nào cũng được xem như tham số của function component có thể xử lý trực tiếp.
+</p>
+
+```js
+
+function StudentInfo(props){
+    return(
+        <div className="main">
+            <h2>{props.name}</h2>
+            <h4>{props.rollNumber}</h4>
+        </div>
+    )
+}
+
+```
+
+<p>
+  - <b>Class component</b>, <b><i>props</i></b> được xử lý bằng <b>this</b>:
+</p>
+
+```js
+
+class StudentInfo extends React.Component{
+    constructor(props){
+        super(props);
+    }
+    
+    render(){
+        return(
+            <div className="main">
+                <h2>{this.props.name}</h2>
+                <h4>{this.props.rollNumber}</h4> 
+            </div>
+        )
+    }
+}
+
+```
 
 <b id="cau4">4. Sự khác biệt giữa useState và useRef?</b>
 <p>
