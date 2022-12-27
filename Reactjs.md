@@ -184,6 +184,63 @@ class StudentInfo extends React.Component{
 
 ```
 
+**c. Xử lý state**
+
+<p>
+  - <b>Function component</b> sử dụng <b>hook</b> để quản lý <b>state</b>. <b>Hook</b> hữu ích nhất là <b>useState</b> cho thiết lập state trong component
+</p>
+
+```js
+
+function ClassRoom(props){
+    let [studentsCount,setStudentsCount] = useState(0);
+    
+    const addStudent = () => {
+        setStudentsCount(++studentsCount);
+    }
+        
+    return(
+        <div>
+            <p>Number of students in class room: {studentsCount}</p>
+            <button onClick={addStudent}>Add Student</button>
+        </div>
+    )
+}
+
+```
+
+<p>
+  - <b>Class component</b> không sử dụng <b>hook</b>, ta phải xử lý các <b>state</b> bằng <b>this</b> trong class component
+</p>
+
+```js
+
+class ClassRoom extends React.Component{
+    constructor(props){
+        super(props);
+
+        this.state = {studentsCount : 0};
+        this.addStudent = this.addStudent.bind(this);
+    }
+    
+    addStudent(){
+        this.setState((prevState)=>{
+            return {studentsCount: prevState.studentsCount++}
+        });
+    }
+    
+    render(){
+        return(
+            <div>
+                <p>Number of students in class room: {this.state.studentsCount}</p>
+                <button onClick={this.addStudent}>Add Student</button>
+            </div>
+        )
+    }
+}
+
+```
+
 <b id="cau4">4. Sự khác biệt giữa useState và useRef?</b>
 <p>
   - <b>useState</b>: là 1 hook dùng để update state trong functional component
