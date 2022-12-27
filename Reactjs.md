@@ -22,6 +22,8 @@
    <li>
     <a href="#cau5">5. useEffect hoạt động như thế nào?</a>
   </li>
+  
+  
  </ul>
 
 
@@ -83,6 +85,54 @@
 
 <b id="cau3">3. Sự khác biệt giữa class component và function component?</b>
 
+**a.Khai báo**
+
+<p>
+  <b>Function component</b> giống như 1 hàm thông thường trong JS, ta có thể tạo kiểu 
+  arrow function hoặc function
+</p> 
+
+```js
+function card(props){
+    return(
+        <div className="main-container">
+            <h2>Title of the card</h2>
+        </div>
+    )
+}
+
+const card = (props) => {
+    return(
+        <div className="main-container">
+            <h2>Title of the card</h2>
+        </div>
+    )
+}
+
+```
+
+<p>
+  <b>Class component</b> sử dụng cú pháp tạo lớp của ES6
+</p>
+
+```js
+
+class Card extends React.Component{
+    constructor(props){
+        super(props);
+    }
+    render(){
+        return(
+            <div className="main-container">
+                <h2>Title of the card</h2>
+            </div>
+        )
+    }
+}
+
+```
+
+
 <b id="cau4">4. Sự khác biệt giữa useState và useRef?</b>
 <p>
   - <b>useState</b>: là 1 hook dùng để update state trong functional component
@@ -100,3 +150,4 @@
 </p>
 
 <b id="cau5">5. useEffect hoạt động như thế nào và nó dùng để làm gì?</b>
+
