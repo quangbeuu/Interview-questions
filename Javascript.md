@@ -664,3 +664,21 @@ a; // "42"
 b; // 42 -- the number!
 
 ```
+**Equality operator (==)**
+
+```js
+
+console.log(69 == "69"); // true
+
+```
+
+<p>
+  - Điều này xả ra là do trước khi phép so sánh thực sự xảy ra, JS sẽ thực hiện <b>coercion</b>. Nói cách khác, nếu 2 value có cùng <i>type</i>, thì ta sẽ thực hiện so sánh luôn, nhưng nếu chúng khác <i>type</i>, JS sẽ cố gắng để convert chúng về cùng 1 type rồi mới so sánh. 
+  
+ <br/>
+  - Ở đây 69 và '69' đã được convert về cùng 1 type là number. 
+</p>
+
+**Lưu ý** - <b>coercion</b> không tuân theo 1 logic nào cả mà nó tuân theo 1 số rules mà ta phải nhớ 
+
+**a. So sánh number và string** 
