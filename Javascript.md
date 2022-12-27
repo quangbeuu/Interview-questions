@@ -46,6 +46,10 @@
   <li>
     <a href="#cau11">11. Closure là gì ?</a>  
   </li>
+  
+  <li>
+    <a href="#cau12">12. Coercion là gì ?</a>  
+  </li>
 </ul>
 
 
@@ -621,3 +625,16 @@ fnc()                     //Hi
   - Không ai có thể truy cập được biến <b>message</b> ngoài function <b>sayHello</b> nhưng nhờ <b>closure</b> function <b>sayHi</b> vẫn có quyền truy cập vào biến <b>message</b>.
   
 </p>
+
+<b id="cau12">12. Coercion là gì?</b>
+
+<p>
+  - <b>Coercion</b> là cách thức chuyển đổi type của các giá trị trong Javascript.
+  <br/>
+  - <b>Coercion</b> có 2 kiểu là: 
+  
+  - <b><i>explicit</i></b> (tường minh - chuyển dữ liệu nhìn dc qua mã)
+  
+  - <b><i>implicit</i></b> (không tường minh - ngầm định)
+</p>
+
