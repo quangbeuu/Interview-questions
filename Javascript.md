@@ -673,12 +673,43 @@ console.log(69 == "69"); // true
 ```
 
 <p>
-  - Điều này xả ra là do trước khi phép so sánh thực sự xảy ra, JS sẽ thực hiện <b>coercion</b>. Nói cách khác, nếu 2 value có cùng <i>type</i>, thì ta sẽ thực hiện so sánh luôn, nhưng nếu chúng khác <i>type</i>, JS sẽ cố gắng để convert chúng về cùng 1 type rồi mới so sánh. 
+  - Điều này xả ra là do trước khi phép so sánh thực sự xảy ra, JS sẽ thực hiện <b>coercion</b>. Nói cách khác, nếu 2 value có cùng <b><i>type</i></b>, thì ta sẽ thực hiện so sánh luôn, nhưng nếu chúng khác <b><i>type</i></b>, JS sẽ cố gắng để convert chúng về cùng 1 type rồi mới so sánh. 
   
  <br/>
   - Ở đây 69 và '69' đã được convert về cùng 1 type là number. 
 </p>
 
-**Lưu ý** - <b>coercion</b> không tuân theo 1 logic nào cả mà nó tuân theo 1 số rules mà ta phải nhớ 
+***Lưu ý** - <b>coercion</b> không tuân theo 1 logic nào cả mà nó tuân theo 1 số rules mà ta phải nhớ 
 
 **a. So sánh number và string** 
+
+<p>
+  <b>string</b> sẽ được convert thành <b>number</b>, sau đó so sánh.
+  <br/>
+  => Từ đó dẫn tới 2 trường hợp: 
+  
+  - Một là <b>string</b> convert được thành number (ví dụ các string như '10', '1235',...), việc so sánh là bình thường. 
+  
+  - Hai là <b>string</b> không thể convert đc thành number (ví dụ string như 'abc', 's123',... ), các giá trị này sẽ convert thành <b>NaN</b> => Kết quả luôn trả về <b>false</b>
+</p>
+
+**b. So sánh boolean với các type values khác** 
+
+<p>
+- Đầu tiền boolean value (true => 1, false => 0) thành number, rồi mới so sánh. 
+<br/>  
+- Ví dụ "1" == true sẽ được đổi thành 1 == 1 do true được convert thành number 1 và string "1" convert thành number 1 => dẫn tới result là <b>true</b>.
+</p>
+
+**c. Strict equality operator (===)** 
+
+<p>- Thằng này chỉ compare 2 value, ko coercion (ko convert type)</p>
+
+
+**d. Operator (+,-,*,/)** 
+
+<p>
+  - Khi so sánh <b>number</b> với <b>string</b>, ngoại trừ toán tử <b>+</b> sẽ tiến hành chuyển đổi <b>number</b> thành <b>string</b> rồi tiến hành phép nối string
+  - Còn các toán tử khác <b>(-,*,/)</b> đều sẽ convert <b>string</b> thành <b>number</b> và tiến hành phép toán như thông thường
+  - Trong trường hợp ko convert được nó sẽ return về <b>NaN</b>
+</p>
