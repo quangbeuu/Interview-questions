@@ -42,6 +42,10 @@
   <li>
     <a href="#cau10">10. Web storage là gì??</a>  
   </li>
+  
+  <li>
+    <a href="#cau11">11. Closure là gì ?</a>  
+  </li>
 </ul>
 
 
@@ -587,3 +591,32 @@ localStorage.removeItem('favoriteColor');
 // Remove ALL the saved data from localStorage
 localStorage.clear();
 ```
+
+<b id="cau11">11. Closure là gì?</b>
+
+<p>
+  
+  - <b>Closure</b> là một tập hợp các hàm được viết lồng vào trong một hàm khác, và nó cho phép bạn truy cập vào biến của hàm khác ngoài các biến của nó và các biến global (biến toàn cục).
+  
+  - <b>Closure</b> vẫn có khả năng lưu trữ được các biến bên trong nó, hay nói một cách khác mỗi khi bạn <b><i>return</i></b> một hàm hoặc gán một hàm cho một biến thì hàm đó sẽ mang theo giá trị tất cả các biến mà nó phụ thuộc.
+</p>
+
+
+```js
+
+function sayHello(){      //parent function
+  let message = "Hi";
+  function sayHi(){       //inner function
+    console.log(message)
+  }
+}
+
+sayHello() // Hi
+
+```
+
+<p>
+  
+  - Không ai có thể truy cập được biến <b>message</b> ngoài function <b>sayHello</b> nhưng nhờ <b>closure</b> function <b>sayHi</b> vẫn có quyền truy cập vào biến <b>message</b>.
+  
+</p>
