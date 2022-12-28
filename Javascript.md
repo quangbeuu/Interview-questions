@@ -883,4 +883,7 @@ isNaN(undefined); // Returns true
   - Một cách để ngắn <b>sự kiện nổi bọt (Bubbling event)</b> là sử dụng <b>event.stopPropagation()</b> hoặc <b>event.cancelBubble</b>
   
 </p>
+<div align="center">
 <img src="https://user-images.githubusercontent.com/29374426/139020948-a4570605-5286-4d66-9ef6-d20ba1e16b0c.png"/>
+</div>
+
