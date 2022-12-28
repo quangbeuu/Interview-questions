@@ -713,3 +713,18 @@ console.log(69 == "69"); // true
   - Còn các toán tử khác <b>(-,*,/)</b> đều sẽ convert <b>string</b> thành <b>number</b> và tiến hành phép toán như thông thường
   - Trong trường hợp ko convert được nó sẽ return về <b>NaN</b>
 </p>
+
+```js
+
+4 + "3"; // "43"
+4 - "3"; // 1
+"4" * "3"; //12
+"4" / 3; //1.33333
+
+4 + "a";
+("4a");
+4 - "a"; // NaN
+4 * "a"; // NaN
+4 / "a"; //NaN
+
+```
