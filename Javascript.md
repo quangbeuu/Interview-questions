@@ -59,6 +59,10 @@
   <li>
     <a href="#cau14">14. Cách để lặp qua các Array trong Javascript?</a>  
   </li>
+  
+  <li>
+    <a href="#cau15">15. Thuộc tính NaN là gì?</a>  
+  </li>
 </ul>
 
 
@@ -842,5 +846,26 @@ for (let i = 0; i <arr.length; i ++) {
 arr.forEach(function (el, index) {
   ...
 }).
+
+```
+
+<b id="cau15">15. Thuộc tính NaN là gì?</b>
+
+<p>
+  - Thuộc tính NaN biểu diễn một giá trị <b>Not-a-Number</b> (một giá trị ko phải là số)
+  <br/>
+  
+  - Muốn kiểm tra xem một giá trị có phải <b>NaN</b> có thể dùng hàm <b>isNaN()</b>
+</p>
+
+
+```js
+
+isNaN("Hello"); // Returns true
+isNaN(345); // Returns false
+isNaN("1"); // Returns false, since '1' is converted to Number type which results in 0 ( a number)
+isNaN(true); // Returns false, since true converted to Number type results in 1 ( a number)
+isNaN(false); // Returns false
+isNaN(undefined); // Returns true
 
 ```
