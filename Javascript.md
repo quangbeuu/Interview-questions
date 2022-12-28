@@ -54,6 +54,11 @@
   <li>
     <a href="#cau13">13. Cách để lặp qua các Object trong Javascript?</a>  
   </li>
+  
+  
+  <li>
+    <a href="#cau14">14. Cách để lặp qua các Array trong Javascript?</a>  
+  </li>
 </ul>
 
 
@@ -737,8 +742,6 @@ console.log(69 == "69"); // true
 
 <p>
   <b>Cách thứ nhất:</b> sử dụng <b>for...in</b> => sẽ lặp qua tất cả các key của obj. Chúng ta có thể ktra bằng lệnh <b>obj.hasOwnProperty(property)</b> trước khi sử dụng nó.
-  <br/>
-  
 </p>
 
 ```js
@@ -813,5 +816,31 @@ for (const [key, value] of Object.entries(object1)) {
 // expected output:
 // "a: somestring"
 // "b: 42"
+
+```
+
+
+<b id="cau14">14. Cách để lặp qua các Array trong Javascript?</b>
+
+
+<p>
+  <b>Cách thứ nhất:</b> sử dụng <b>for</b>, <b>let</b> có phạm vi <b>block scope</b> nên ta nên khai báo biến i bằng <b>let</b>
+</p>
+
+```js
+for (let i = 0; i <arr.length; i ++) {
+  ...for (let i = 0; i <arr.length; i ++)
+}
+```
+
+<p>
+  <b>Cách thứ hai:</b> sử dụng <b>forEach</b>, (nhược điểm của thằng này là ko sử dụng được <b>break</b>)
+</p>
+
+```js
+
+arr.forEach(function (el, index) {
+  ...
+}).
 
 ```
