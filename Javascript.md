@@ -880,7 +880,6 @@ isNaN(undefined); // Returns true
 <p>
   - <b>Bubbling event</b> là khái niệm trong đó một event kích hoạt ở phần tử sâu nhất và kích hoạt trên các phần tử mẹ theo thứ tự lồng vào nhau. Do đó, khi click vào một phần tử con, sự kiện click của phần tử cha cũng sẽ được kích hoạt.
 <br/>
-  
   - Một cách để ngắn <b>sự kiện nổi bọt (Bubbling event)</b> là sử dụng <b>event.stopPropagation()</b> hoặc <b>event.cancelBubble</b>
   
 </p>
