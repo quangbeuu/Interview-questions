@@ -755,3 +755,63 @@ for (const property in object) {
 // "c: 3"
 
 ```
+
+<p>
+  <b>Cách thứ hai:</b> sử dụng <b>Object.keys()</b> => sẽ lặp qua tất cả các key của obj. 
+</p>
+
+```js
+
+const object1 = {
+  a: 'somestring',
+  b: 42,
+  c: false
+};
+
+console.log(Object.keys(object1));
+// expected output: Array ["a", "b", "c"]
+
+
+Object.keys(obj).forEach(function (property) {
+  ...
+})
+
+```
+
+<p>
+  <b>Cách thứ ba:</b> sử dụng <b>Object.getOwnPropertyNames()</b>
+</p>
+
+```js
+
+const object1 = {
+  a: 1,
+  b: 2,
+  c: 3
+};
+
+console.log(Object.getOwnPropertyNames(object1));
+// expected output: Array ["a", "b", "c"]
+
+```
+
+<p>
+  <b>Cách thứ tư:</b> sử dụng <b>Object.entries()</b>
+</p>
+
+```js
+
+const object1 = {
+  a: 'somestring',
+  b: 42
+};
+
+for (const [key, value] of Object.entries(object1)) {
+  console.log(`${key}: ${value}`);
+}
+
+// expected output:
+// "a: somestring"
+// "b: 42"
+
+```
