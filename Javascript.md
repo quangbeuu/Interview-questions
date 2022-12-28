@@ -67,6 +67,10 @@
   <li>
     <a href="#cau16">16. Giải thích về bubbling event và cách để ngăn chặn nó?</a>  
   </li>
+  
+  <li>
+    <a href="#cau17">17. Cách để copy một mảng?</a>  
+  </li>
 </ul>
 
 
@@ -887,3 +891,41 @@ isNaN(undefined); // Returns true
 <img src="https://user-images.githubusercontent.com/29374426/139020948-a4570605-5286-4d66-9ef6-d20ba1e16b0c.png"/>
 </div>
 
+
+<b id="cau17">17. Cách để copy một mảng?</b>
+
+<p>
+  - Để có thể copy một mảng, chúng ta có thể sử dụng một trong các cách dưới đây: 
+</p>
+
+**a. Sử dụng hàm slice:**
+
+```js
+
+const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+
+console.log(animals.slice());
+// expected output: Array ["ant", "bison", "camel", "duck", "elephant"]
+
+```
+
+
+**b. Sử dụng hàm JSON.stringify() và JSON.parse (deep copy):
+
+```js
+
+// array of objects
+const objsArr = [{ name: "John Doe" }, { name: "Roy Daniel" }];
+
+// first convert the array into a string
+// using the JSON.stringify() method
+const objsArrStr = JSON.stringify(objsArr);
+
+// conver the string again to array of objects
+// using the JSON.parse() method
+const objsArrDeepCopy = JSON.parse(objsArrStr);
+
+console.log(objsArrDeepCopy);
+// copied array of objects -> [{ name: "John Doe" }, { name: "Roy Daniel" }]
+
+```
