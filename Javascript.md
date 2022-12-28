@@ -50,6 +50,10 @@
   <li>
     <a href="#cau12">12. Coercion là gì ?</a>  
   </li>
+  
+  <li>
+    <a href="#cau13">13. Cách để lặp qua các Object trong Javascript?</a>  
+  </li>
 </ul>
 
 
@@ -726,5 +730,28 @@ console.log(69 == "69"); // true
 4 - "a"; // NaN
 4 * "a"; // NaN
 4 / "a"; //NaN
+
+```
+
+<b id="cau13">13. Cách để lặp qua các Object trong Javascript?</b>
+
+<p>
+  <b>Cách thứ nhất:</b> sử dụng <b>for...in</b> => sẽ lặp qua tất cả các key của obj. Chúng ta có thể ktra bằng lệnh <b>obj.hasOwnProperty(property)</b> trước khi sử dụng nó.
+  <br/>
+  
+</p>
+
+```js
+
+const object = { a: 1, b: 2, c: 3 };
+
+for (const property in object) {
+  console.log(`${property}: ${object[property]}`);
+}
+
+// expected output:
+// "a: 1"
+// "b: 2"
+// "c: 3"
 
 ```
