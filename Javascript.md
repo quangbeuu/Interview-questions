@@ -910,7 +910,7 @@ console.log(animals.slice());
 ```
 
 
-**b. Sử dụng hàm JSON.stringify() và JSON.parse (deep copy):
+**b. Sử dụng hàm JSON.stringify() và JSON.parse (deep copy):**
 
 ```js
 
@@ -927,5 +927,29 @@ const objsArrDeepCopy = JSON.parse(objsArrStr);
 
 console.log(objsArrDeepCopy);
 // copied array of objects -> [{ name: "John Doe" }, { name: "Roy Daniel" }]
+
+```
+
+**c.Sử dụng toán tử spread operator [...] trong ES6:**
+
+```js
+const sheeps = ['🐑', '🐑', '🐑'];
+
+const cloneSheepsES6 = [...sheeps];
+```
+
+**d. Sử dụng Object.assign:**
+
+```js
+let newArr = Object.assign([], originArr);
+
+```
+
+**e. Sử dụng Array.map():**
+
+```js
+
+const arrOrigin = [1, 2, 3];
+const newArr = arrOrigin.map(x => x);
 
 ```
