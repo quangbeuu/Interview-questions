@@ -63,6 +63,10 @@
   <li>
     <a href="#cau15">15. Thuộc tính NaN là gì?</a>  
   </li>
+  
+  <li>
+    <a href="#cau16">16. Giải thích về bubbling event và cách để ngăn chặn nó?</a>  
+  </li>
 </ul>
 
 
@@ -869,3 +873,15 @@ isNaN(false); // Returns false
 isNaN(undefined); // Returns true
 
 ```
+
+
+<b id="cau16">16. Giải thích về bubbling event và cách để ngăn chặn nó?</b>
+
+<p>
+  - <b>Bubbling event</b> là khái niệm trong đó một event kích hoạt ở phần tử sâu nhất và kích hoạt trên các phần tử mẹ theo thứ tự lồng vào nhau. Do đó, khi click vào một phần tử con, sự kiện click của phần tử cha cũng sẽ được kích hoạt.
+<br/>
+  
+  - Một cách để ngắn <b>sự kiện nổi bọt (Bubbling event)</b> là sử dụng <b>event.stopPropagation()</b> hoặc <b>event.cancelBubble</b>
+  
+</p>
+<img src="https://user-images.githubusercontent.com/29374426/139020948-a4570605-5286-4d66-9ef6-d20ba1e16b0c.png"/>
