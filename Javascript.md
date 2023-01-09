@@ -1011,6 +1011,6 @@ console.log(q); // true
   - Hầu hết các file trong ứng dụng React sẽ dc <b><i>bundle</i></b> (đóng gói) bằng các công cụ như <b><i>Webpack, Rollup hoặc Browserify</i></b>. Đóng gói là quá trình xử lý những files đã được import và kết hợp chúng thành một file duy nhất. 
   <br/>
   <br/>
-  - Nếu một ứng dụng có kích thước lớn,file đóng gói sẽ phình to theo, đặc biệt, khi chúng ta sử dụng thêm các thư viện bên thứ 3 (third party library). Để tránh việc nhận một gói bundle lớn, chúng ta cần phải
+  - Nếu một ứng dụng có kích thước lớn,file đóng gói sẽ phình to theo, đặc biệt, khi chúng ta sử dụng thêm các thư viện bên thứ 3 (third party library). Để tránh việc nhận một gói bundle lớn, chúng ta cần phải <b><i>chia nhỏ file bundle.</i></b>
 </p>
 
