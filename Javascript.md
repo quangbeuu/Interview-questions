@@ -75,6 +75,10 @@
   <li>
     <a href="#cau18">18. Destructuring là gì?</a>  
   </li>
+  
+  <li>
+    <a href="#cau19">19. Code splitting là gì?</a>  
+  </li>
 </ul>
 
 
@@ -996,3 +1000,14 @@ console.log(p); // 42
 console.log(q); // true
 
 ```
+
+<b id="cau19">19. Code splitting là gì?</b>
+
+**Code splitting**
+
+<img src="https://wiki.tino.org/wp-content/uploads/2021/10/code-splitting.png"/>
+
+<p>
+  - Hầu hết các file trong ứng dụng React sẽ dc <b><i>bundle</i></b> (đóng gói) bằng các công cụ như <b><i>Webpack, Rollup hoặc Browserify</i></b>. Đóng gói là quá trình xử lý những files đã được import và kết hợp chúng thành một file duy nhất. 
+</p>
+
