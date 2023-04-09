@@ -1191,7 +1191,20 @@ Math.floor(1.5);  // 1
 
 ```
 
-**d. Hàm Math.trunc()**
+**e. Hàm toFixed()**
+
+```js
+
+// - Hàm lấy số chữ số thập phân sau dấu phẩy
+
+let num = 3.14159;
+console.log(num.toFixed(2)); // "3.14"
+console.log(num.toFixed(4)); // "3.1416"
+console.log(num.toFixed(0)); // "3"
+
+```
+
+**e. Hàm Math.trunc()**
 
 ```js
 
