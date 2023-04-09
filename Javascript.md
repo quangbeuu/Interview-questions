@@ -79,6 +79,10 @@
   <li>
     <a href="#cau19">19. Code splitting là gì?</a>  
   </li>
+  
+   <li>
+    <a href="#cau20">20. Các phương thức của String?</a>  
+  </li>
 </ul>
 
 
@@ -1014,7 +1018,7 @@ console.log(q); // true
   - Nếu một ứng dụng có kích thước lớn,file đóng gói sẽ phình to theo, đặc biệt, khi chúng ta sử dụng thêm các thư viện bên thứ 3 (third party library). Để tránh việc nhận một gói bundle lớn, chúng ta cần phải <b><i>chia nhỏ file bundle.</i></b>
 </p>
 
-<b id="cau20">20. Các phương thức của ?</b>
+<b id="cau20">20. Các phương thức của String?</b>
 
 **a. Phương thức length**
 
