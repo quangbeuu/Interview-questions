@@ -1014,3 +1014,136 @@ console.log(q); // true
   - Nếu một ứng dụng có kích thước lớn,file đóng gói sẽ phình to theo, đặc biệt, khi chúng ta sử dụng thêm các thư viện bên thứ 3 (third party library). Để tránh việc nhận một gói bundle lớn, chúng ta cần phải <b><i>chia nhỏ file bundle.</i></b>
 </p>
 
+<b id="cau20">20. Các phương thức của ?</b>
+
+**a. Phương thức length**
+
+```js
+// - Trả về độ dài của chuỗi
+
+const str = 'Hello, world!';
+console.log(str.length); // 13
+
+```
+
+**b. Phương thức charAt(index)**
+
+
+```js
+
+// - Phương thức này trả về ký tự ở vị trí index của chuỗi. Nếu index vượt quá độ dài của chuỗi, phương thức sẽ trả về một chuỗi rỗng.
+
+const str = 'Hello, world!';
+console.log(str.charAt(0)); // H
+console.log(str.charAt(6)); // ,
+console.log(str.charAt(13)); // ''
+
+```
+
+**c. Phương thức concat(str1, str2, ..., strN)**
+
+```js
+
+// - Phương thức này để nối các chuỗi với nhau
+
+const str1 = 'Hello';
+const str2 = 'world!';
+console.log(str1.concat(', ', str2)); // Hello, world!
+
+```
+
+**d. Phương thức indexOf(substr, start)**
+
+```js
+
+// - Phương thức này trả về vị trí đầu tiên mà chuỗi con substr xuất hiện trong chuỗi hiện tại, bắt đầu tìm kiếm từ vị trí start. Nếu không tìm thấy, phương thức trả về -1.
+
+const str = 'Hello, world!';
+console.log(str.indexOf('world')); // 7
+console.log(str.indexOf('l', 3)); // 3
+console.log(str.indexOf('goodbye')); // -1
+
+```
+
+**e. Phương thức lastIndexOf(substr, start)**
+
+```js
+
+// - Phương thức này hoạt động tương tự như indexOf, nhưng bắt đầu tìm kiếm từ cuối chuỗi.
+
+const str = 'Hello, world!';
+console.log(str.lastIndexOf('o')); // 8
+console.log(str.lastIndexOf('l', 3)); // 3
+console.log(str.lastIndexOf('goodbye')); // -1
+
+```
+
+**f. Phương thức replace(searchValue, replaceValue)**
+
+```js
+
+// - Phương thức này thay thế tất cả các chuỗi con được tìm thấy bằng searchValue bằng chuỗi replaceValue.
+
+const str = 'Hello, world!';
+console.log(str.replace('world', 'John')); // Hello, John!
+
+```
+
+**g. Phương thức slice(start, end)**
+
+
+```js
+
+// - Phương thức này trích xuất một phần của chuỗi bắt đầu từ vị trí start và kết thúc ở vị trí end. Nếu end không được cung cấp, phương thức sẽ trích xuất từ vị trí start đến cuối chuỗi.
+
+const str = 'Hello, world!';
+console.log(str.slice(7)); // world!
+console.log(str.slice(0, 5)); // Hello
+
+```
+
+
+**h. Phương thức split(separator, limit)**
+
+```js
+
+// - Phương thức này để cắt chuỗi. Tham số limit xác định số lượng phần tử tối đa trong mảng kết quả.
+
+const str = 'Hello, world!';
+console.log(str.split(' ')); // [ 'Hello,', 'world!' ]
+console.log(str.split('l', 2)); // [ 'He', '', 'o, wor' ]
+
+```
+
+**i. Phương thức toLowerCase**
+
+```js
+
+// - Chuyển đổi chuỗi thành chữ thường.
+
+const str = 'HeLLo, WorlD!';
+console.log(str.toLowerCase()); // hello, world!
+
+```
+
+**k. Phương thức toUpperCase**
+
+```js
+
+// - Chuyển đổi chuỗi thành chữ hoa
+
+const str = 'HeLLo, WorlD!';
+console.log(str.toUpperCase()); // HELLO, WORLD!
+
+```
+
+**l. Phương thức trim()**
+
+```js
+
+// - Phương thức này loại bỏ khoảng trắng từ đầu và cuối chuỗi.
+
+const str = '   Hello, world!   ';
+console.log(str.trim()); // Hello, world!
+
+```
