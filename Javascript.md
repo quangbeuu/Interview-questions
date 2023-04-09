@@ -309,7 +309,7 @@ console.log(greeting);//"say Hi"
 
 ```
 
-<b>* Hoisting of let:</b> 
+<b>* Hoisting of let (let ko bị hoisting):</b> 
 
 <p>
 - Giống như <b>var</b>, các khai báo <b>let</b> được đưa lên trên cùng
@@ -339,7 +339,7 @@ const greeting = "say Hello instead";//error : Identifier 'greeting' has already
 
 ```
 
-<b>* Hoisting of const:</b> 
+<b>* Hoisting of const (const ko bị hoisting):</b> 
 
 <p>
   - Cũng giống như <b>let</b>, khai báo <b>const</b> được nâng lên đầu nhưng không được khởi tạo.
