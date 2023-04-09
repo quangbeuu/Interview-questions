@@ -83,6 +83,10 @@
    <li>
     <a href="#cau20">20. Các phương thức của String?</a>  
   </li>
+  
+  <li>
+    <a href="#cau21">21. Các hàm làm tròn (rounded functions)?</a>  
+  </li>
 </ul>
 
 
