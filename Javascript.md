@@ -1151,3 +1151,51 @@ const str = '   Hello, world!   ';
 console.log(str.trim()); // Hello, world!
 
 ```
+
+<b id="cau21">21. Các hàm làm tròn (rounded functions)?</b>
+
+**a. Hàm Math.round()**
+
+```js
+
+// - Trả về giá trị số nguyên gần nhất với số đang xét, nếu nửa trên của số đó lớn hơn hoặc bằng 0.5, nó sẽ làm tròn lên; nếu không, nó sẽ làm tròn xuống. 
+
+Math.round(1.4);  // 1
+Math.round(1.5);  // 2
+
+```
+
+**b. Hàm Math.ceil()**
+
+```js
+
+// - Hàm làm tròn lên
+
+Math.ceil(1.4);  // 2
+Math.ceil(1.5);  // 2
+
+```
+
+**c. Hàm Math.floor()**
+
+```js
+
+// - Hàm làm tròn xuống
+
+Math.floor(1.4);  // 1
+Math.floor(1.5);  // 1
+
+```
+
+**d. Hàm Math.trunc()**
+
+```js
+
+// -  Nó không làm tròn số và sẽ trả về số nguyên gần nhất với số đang xét
+
+Math.trunc(1.4);  // 1
+Math.trunc(1.5);  // 1
+
+```
+
+
