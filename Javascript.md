@@ -1304,3 +1304,117 @@ const citrusFruits = fruits.slice(2, 4);
 console.log(citrusFruits); // ['orange', 'kiwi']
 
 ```
+
+**g. Hàm concat()**
+
+```js
+
+// -  Kết hợp hai hoặc nhiều mảng thành một mảng mới.
+
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+const newArr = arr1.concat(arr2);
+console.log(newArr); // [1, 2, 3, 4, 5, 6]
+
+```
+
+
+**h. Hàm join()**
+
+```js
+
+// -  Kết hợp hai hoặc nhiều mảng thành một mảng mới.
+
+const fruits = ['apple', 'banana', 'orange'];
+const fruitString = fruits.join(', ');
+console.log(fruitString); // 'apple, banana, orange'
+
+```
+
+
+**i. Hàm reverse()**
+
+```js
+
+// -  Đảo ngược thứ tự của các phần tử trong mảng.
+
+const fruits = ['apple', 'banana', 'orange'];
+fruits.reverse();
+console.log(fruits); // ['orange', 'banana', 'apple']
+
+```
+
+**k. Hàm sort()**
+
+```js
+
+// -  Sắp xếp các phần tử của mảng theo thứ tự từ nhỏ đến lớn hoặc từ A đến Z.
+
+const fruits = ['orange', 'apple', 'banana'];
+fruits.sort();
+console.log(fruits); // ['apple', 'banana', 'orange']
+
+
+```
+
+**l. Hàm indexOf()**
+
+```js
+
+// - Tìm vị trí của phần tử được chỉ định trong mảng.
+
+const fruits = ['apple', 'banana', 'orange'];
+const orangeIndex = fruits.indexOf('orange');
+console.log(orangeIndex); // 2
+
+```
+
+**m. Hàm lastIndexOf()**
+
+```js
+
+// - Tìm vị trí của phần tử được chỉ định trong mảng, bắt đầu từ cuối mảng.
+
+const fruits = ['apple', 'banana', 'orange', 'banana'];
+const bananaIndex = fruits.lastIndexOf('banana');
+console.log(bananaIndex); // 3
+
+```
+
+**n. Hàm filter()**
+
+```js
+
+// - Tạo một mảng mới với tất cả các phần tử của mảng ban đầu được đánh giá là đúng bởi một hàm kiểm tra được chỉ định.
+
+const numbers = [1, 2, 3, 4, 5, 6];
+const evenNumbers = numbers.filter(num => num % 2 === 0);
+console.log(evenNumbers); // [2, 4, 6]
+
+```
+
+**o. Hàm map()**
+
+```js
+
+// - Tạo một mảng mới bằng cách chạy một hàm trên mỗi phần tử của mảng ban đầu.
+
+const numbers = [1, 2, 3, 4, 5];
+const doubledNumbers = numbers.map(num => num * 2);
+console.log(doubledNumbers); // [2, 4, 6, 8, 10]
+
+```
+
+**p. Hàm includes()**
+
+```js
+
+// - Kiểm tra xem một giá trị có tồn tại trong mảng hay không
+
+const numbers = [1, 2, 3, 4, 5];
+const isThreeIncluded = numbers.includes(3);
+console.log(isThreeIncluded); // true
+const isSixIncluded = numbers.includes(6);
+console.log(isSixIncluded); // false
+
+```
