@@ -87,6 +87,10 @@
   <li>
     <a href="#cau21">21. Các hàm làm tròn (rounded functions)?</a>  
   </li>
+  
+   <li>
+    <a href="#cau22">22. Các phương thức của array?</a>  
+  </li>
 </ul>
 
 
@@ -1216,3 +1220,87 @@ Math.trunc(1.5);  // 1
 ```
 
 
+<b id="cau22">22. Các phương thức của array??</b>
+
+**a. Hàm push()**
+
+```js
+
+// - Thêm một phần tử vào cuối mảng và trả về độ dài mới của mảng
+
+const fruits = ['apple', 'banana'];
+const newLength = fruits.push('orange');
+console.log(fruits); // ['apple', 'banana', 'orange']
+console.log(newLength); // 3
+
+```
+
+**b. Hàm pop()**
+
+```js
+
+// - Xóa phần tử cuối cùng của mảng và trả về giá trị của phần tử đó.
+
+const fruits = ['apple', 'banana', 'orange'];
+const lastFruit = fruits.pop();
+console.log(fruits); // ['apple', 'banana']
+console.log(lastFruit); // 'orange'
+
+```
+
+**c. Hàm shift()**
+
+```js
+
+// - Xóa phần tử đầu tiên của mảng và trả về giá trị của phần tử đó.
+
+const fruits = ['apple', 'banana', 'orange'];
+const firstFruit = fruits.shift();
+console.log(fruits); // ['banana', 'orange']
+console.log(firstFruit); // 'apple'
+
+```
+
+
+**d. Hàm unshift()**
+
+```js
+
+// - Thêm một phần tử vào đầu mảng và trả về độ dài mới của mảng.
+
+const fruits = ['banana', 'orange'];
+const newLength = fruits.unshift('apple');
+console.log(fruits); // ['apple', 'banana', 'orange']
+console.log(newLength); // 3
+
+```
+
+**e. Hàm splice()**
+
+```js
+
+// - Thay đổi nội dung của mảng bằng cách xóa hoặc thay thế các phần tử 
+// và / hoặc thêm các phần tử mới.
+
+//      + Đối số đầu tiên xác định vị trí bắt đầu của phần tử được xóa hoặc thay thế.
+//      + Đối số thứ hai xác định số lượng phần tử sẽ bị xóa từ vị trí bắt đầu.
+//      + Các đối số còn lại là các phần tử mới sẽ được thêm vào vị trí bắt đầu.
+
+const fruits = ['apple', 'banana', 'orange'];
+fruits.splice(1, 1, 'kiwi', 'mango');
+console.log(fruits); // ['apple', 'kiwi', 'mango', 'orange']
+
+```
+
+**f. Hàm slice()**
+
+
+```js
+
+// -  Tạo một mảng mới bằng cách chọn một phần của mảng hiện có.
+
+const fruits = ['apple', 'banana', 'orange', 'kiwi', 'mango'];
+const citrusFruits = fruits.slice(2, 4);
+console.log(citrusFruits); // ['orange', 'kiwi']
+
+```
