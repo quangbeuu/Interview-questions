@@ -91,6 +91,10 @@
    <li>
     <a href="#cau22">22. Các phương thức của array?</a>  
   </li>
+  
+  <li>
+    <a href="#cau23">23. Một số loại function trong JavaScript?</a>  
+  </li>
 </ul>
 
 
@@ -1220,7 +1224,7 @@ Math.trunc(1.5);  // 1
 ```
 
 
-<b id="cau22">22. Các phương thức của array??</b>
+<b id="cau22">22. Các phương thức của array?</b>
 
 **a. Hàm push()**
 
@@ -1416,5 +1420,93 @@ const isThreeIncluded = numbers.includes(3);
 console.log(isThreeIncluded); // true
 const isSixIncluded = numbers.includes(6);
 console.log(isSixIncluded); // false
+
+```
+
+<b id="cau23">23. Các phương thức của array?</b>
+
+**a. Function Declaration: Định nghĩa hàm thông qua từ khóa "function".**
+
+```js
+
+function functionName() {
+   // Code to be executed
+}
+
+```
+
+**b. Function Expression: Định nghĩa hàm thông qua một biểu thức.**
+
+
+```js
+
+var functionName = function() {
+   // Code to be executed
+};
+
+```
+
+**c. Arrow Function: Hàm có cú pháp ngắn gọn, thường được sử dụng cho các tác vụ đơn giản.**
+
+
+```js
+
+const functionName = () => {
+   // Code to be executed
+};
+
+```
+
+**d. Callback Function: Hàm được truyền vào một hàm khác như một đối số và được gọi lại sau khi hàm khác hoàn thành.**
+
+```js
+
+function functionName(callback) {
+   // Code to be executed
+   callback();
+}
+
+```
+
+**e. Anonymous Function: Hàm không có tên.**
+
+```js
+
+var functionName = function() {
+   // Code to be executed
+};
+
+```
+
+**f. Immediately Invoked Function Expression (IIFE): Hàm được gọi ngay khi khai báo.**
+
+```js
+
+(function() {
+   // Code to be executed
+})();
+
+```
+
+**g. Generator Function: Hàm đặc biệt có thể tạm dừng và tiếp tục thực hiện từ các vị trí khác nhau.**
+
+```js
+
+function* functionName() {
+   // Code to be executed
+   yield;
+}
+
+```
+
+**h. Method: Hàm được định nghĩa bên trong một đối tượng.**
+
+```js
+
+var object = {
+   functionName: function() {
+      // Code to be executed
+   }
+};
 
 ```
